@@ -1,0 +1,287 @@
+/* ========
+    FONTS
+   ========
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Great+Vibes&display=swap');
+
+:root {
+    --clr-text: #3d3d3d;
+    --clr-primary: #067E0A;
+    --clr-primary-dark: #065509;
+    --clr-accent: #30003e;
+    --clr-accent-dark: #1b0322;
+
+    --ff-title: 'Bubblegum Sans', cursive;
+    --ff-primary: Arial, Sans-serif;
+    --ff-logo: 'Great Vibes', cursive;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: var(--ff-primary);
+    color: var(--clr-text);
+    font-size: 1.125rem;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+section {
+    padding: 3em 1em;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+/* Typography */
+
+h1, h2, h3, h4, p {
+    margin: 0;
+}
+
+h2,
+h3 {
+    font-family: var(--ff-title);
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+
+p {
+    margin-bottom: .85em;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+.section-title-small {
+    font-size: 1.1rem;
+}
+
+.section-title-small small {
+    font-size: .7em;
+    display: block;
+}
+
+.text-primary {
+    color: var(--clr-primary);
+}
+
+.logo {
+    font-family: var(--ff-logo);
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.logo a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Navigation */
+
+header {
+    padding: 1em 0 2em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: space-around;
+}
+
+nav a {
+    display: inline-block;
+    padding: .5em;
+    color: var(--clr-primary);
+    text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+    color: var(--clr-accent);
+}
+
+/* Buttons */
+
+.btn-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.btn {
+    padding: .75em 2.5em;
+    border: 1px solid #067E0A;
+    color: white;
+    text-decoration: none;
+    margin: .5em 0;
+    border-radius: .25em;
+}
+
+.btn-primary {
+    background: var(--clr-primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background: var(--clr-primary-dark);
+}
+
+.btn-accent {
+    background-color: var(--clr-accent);
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+    background-color: var(--clr-accent-dark);
+}
+
+/* Homepage Styles */
+
+.hero {
+    background-color: #333;
+    background-image: url(../img/hippie-monkey.PNG);
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    padding: 15vh 1em;
+
+}
+
+.about-us {
+    background: var(--clr-accent);
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+}
+
+.about-us__intro {
+    background-image: url(../img/k2.jpg);
+    padding: 3em 1em 1.5em;
+}
+
+.about-us__body {
+    padding: 1.5em 1em 3em;
+}
+
+.order-online {
+    background: #f7f7f7;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+}
+
+.product {
+    box-shadow: 0 0 1em rgba(0, 0, 0, .1);
+    border-radius: .25em;
+    margin-bottom: .8em;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.product__img {
+    border-top-left-radius: .45em;
+}
+
+.product:last-of-type {
+    margin-bottom: 2em;
+}
+
+.product__content {
+    padding: 1.5em;
+}
+
+.product__title {
+    color: var(--clr-primary);
+    font-size: 1.3rem;
+    margin-bottom: .5em;
+}
+
+.fineprint {
+    font-size: .7em;
+    color: rgba(0, 0, 0, .85);
+}
+
+footer {
+    display: flex;
+    background: var(--clr-accent);
+    padding: 1em 0 .5em;
+    margin-top: 2em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: .7em;
+}
+
+.footer-nav a {
+    padding: .75em;
+}
+
+.footer-nav a:hover {
+    text-decoration: underline;
+}
+
+.social-icon {
+    width: 30px;
+}
+
+@media only screen and (min-width: 700px) {
+    section {
+        padding: 6em 1em;
+    }
+
+    .about-us {
+        flex-direction: row;
+    }
+
+    .about-us__intro,
+    .about-us__body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 0 1 50%;
+        padding: 3em 2em;
+    }
+
+    .about-us__intro {
+        text-align: right;
+    }
+
+    .about-us__intro > * {
+        max-width: 976px;
+    }
+}
