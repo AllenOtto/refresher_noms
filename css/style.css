@@ -204,7 +204,7 @@ nav a:focus {
     box-shadow: 0 0 1em rgba(0, 0, 0, .1);
     border-radius: .25em;
     margin-bottom: .8em;
-    max-width: 350px;
+    max-width: 300px;
     margin: 0 auto;
 }
 
@@ -317,5 +317,17 @@ footer li {
 
     .products {
         flex-direction: row;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 5em;
     }
+
+    .product {
+        flex: 0 1 33%;
+    }
+
+    .product + .product {
+        margin-left: 1em;
+    }
+
 }
