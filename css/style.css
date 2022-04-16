@@ -162,8 +162,8 @@ nav a:focus {
 /* Homepage Styles */
 
 .hero {
-    background-color: #333;
-    background-image: url(../img/hippie-monkey.PNG);
+    background-color: #555;
+    background-image: url(../img/bg-hero-banner.jpg);
     background-blend-mode: multiply;
     background-position: center;
     background-size: cover;
@@ -233,6 +233,7 @@ nav a:focus {
 
 footer {
     display: flex;
+    justify-content: space-evenly;
     background: var(--clr-accent);
     padding: 1em 0 .5em;
     margin-top: 2em;
@@ -267,6 +268,7 @@ footer li {
 
     .btn-group {
         flex-direction: row;
+        justify-content: center;
         margin-top: 1em;
     }
 
@@ -305,6 +307,11 @@ footer li {
         margin-right: auto;
     }
 
+    .intro {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
     .order-online > * {
         max-width: 60ch;
         margin-left: auto;
@@ -328,6 +335,10 @@ footer li {
 
     .product + .product {
         margin-left: 1em;
+    }
+
+    footer {
+        margin: 0 auto;
     }
 
 }
