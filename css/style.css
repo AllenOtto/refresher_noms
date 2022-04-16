@@ -265,6 +265,15 @@ footer li {
         padding: 6em 1em;
     }
 
+    .btn-group {
+        flex-direction: row;
+        margin-top: 1em;
+    }
+
+    .btn + .btn {
+        margin-left: .5em;
+    }
+
     .about-us {
         flex-direction: row;
     }
@@ -294,5 +303,19 @@ footer li {
     .about-us__body > * {
         max-width: 22em;
         margin-right: auto;
+    }
+
+    .order-online > * {
+        max-width: 60ch;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .order-online {
+        display: grid;
+    }
+
+    .products {
+        flex-direction: row;
     }
 }
