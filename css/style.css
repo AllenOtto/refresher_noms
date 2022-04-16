@@ -182,7 +182,8 @@ nav a:focus {
 }
 
 .about-us__intro {
-    background-image: url(../img/k2.jpg);
+    background-image: url(../img/bg-purple.jpg);
+    background-size: cover;
     padding: 3em 1em 1.5em;
 }
 
@@ -274,7 +275,7 @@ footer li {
         flex-direction: column;
         justify-content: center;
         flex: 0 1 50%;
-        padding: 3em 2em;
+        padding: 4em 3em;
     }
 
     .about-us__intro {
@@ -282,6 +283,16 @@ footer li {
     }
 
     .about-us__intro > * {
-        max-width: 976px;
+        max-width: 22em;
+        margin-left: auto;
+    }
+
+    .about-us__body {
+        text-align: left;
+    }
+
+    .about-us__body > * {
+        max-width: 22em;
+        margin-right: auto;
     }
 }
